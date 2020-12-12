@@ -29,7 +29,6 @@ public void draw()
   }
   for (int i = 0; i < Sid.size(); i++) {
     Sid.get(i).show();
-    Sid.get(i).turn(1.5);
     Sid.get(i).move();
   }
 
