@@ -55,10 +55,10 @@ class Spaceship extends Floater
     setRandPos();
   }
   
-  public float getXPos() {
-    return ((float)(myCenterX));  
+  public double getXPos() {
+    return (myCenterX);  
   }
-  public float getYPos() {
-    return ((float)(myCenterX));
+  public double getYPos() {
+    return (myCenterX);
   }
 }
