@@ -30,8 +30,8 @@ public void draw()
     Cass[i].show();
   }
   for (int i = 0; i < Sid.size(); i++) {
-    Sid.get(i).show();
     Sid.get(i).move();
+    Sid.get(i).show();
   }
   for (int i = 0; i < bul_list.size(); i++) {
     bul_list.get(i).show();
