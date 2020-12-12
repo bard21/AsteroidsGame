@@ -86,7 +86,7 @@ public void keyPressed() {
      Leo.hyperspace(0, 0);
   }  
   if (key == 'q') {
-    bul_list.add(new Bullet(Leo));
+     bul_list.add(new Bullet(Leo));
   }
 }
 
