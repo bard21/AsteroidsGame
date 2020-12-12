@@ -3,7 +3,7 @@ class Asteroid extends Floater {
    private double rotation_speed;
  
    public Asteroid() {
-     rotation_speed = (Math.random() * 20);
+     rotation_speed = (Math.random() * 5);
      corners = 8;
      xCorners = new int[corners];
      yCorners = new int[corners];
@@ -28,8 +28,8 @@ class Asteroid extends Floater {
      myColor = color(255, 255, 255);
      myCenterX = (Math.random() * 700);
      myCenterY = (Math.random() * 600);
-     myXspeed = (Math.random() * 1.5) - 3;
-     myYspeed = (Math.random() * 1.5) - 3; 
+     myXspeed = (Math.random() * 3) - 1.5;
+     myYspeed = (Math.random() * 3) - 1.5; 
      myPointDirection = (int)(Math.random() * 360);
    }  
    
@@ -43,5 +43,10 @@ class Asteroid extends Floater {
   }
   public double getPositionY() {
     return (myCenterY);
+  }
+  
+  public void move() {
+    turn(rotation_speed);
+    super.move();
   }
 }
